@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriCode - Your Cybersecurity Partner for Tomorrow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(90deg, #00d1b2, #0077b6);
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        nav {
+            margin: 1rem;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffdd57;
+        }
+        .hero {
+            text-align: center;
+            padding: 7rem 1rem;
+            background-image: url('https://via.placeholder.com/1600x800');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero h2 {
+            font-size: 4rem;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        .cta {
+            padding: 1.5rem;
+            background-color: #00d1b2;
+            text-align: center;
+            margin: 3rem auto;
+            display: inline-block;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            position: relative;
+            z-index: 1;
+        }
+        .cta a {
+            color: #0a0a0a;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        .cta:hover {
+            background-color: #0077b6;
+        }
+        .services {
+            padding: 4rem 2rem;
+            background-color: #121212;
+        }
+        .services h2 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .service {
+            background-color: #1e1e1e;
+            padding: 2rem;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .service:hover {
+            transform: translateY(-10px);
+        }
+        .service h3 {
+            margin-top: 0;
+            color: #00d1b2;
+        }
+        .contact-form {
+            background-color: #1e1e1e;
+            padding: 3rem;
+            border-radius: 10px;
+            margin: 4rem auto;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #ffffff;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #00d1b2;
+            color: #0a0a0a;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #0077b6;
+        }
+        footer {
+            text-align: center;
+            padding: 3rem;
+            background-color: #222;
+            margin-top: 4rem;
+            color: #ffffff;
+        }
+        footer a {
+            color: #00d1b2;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #ffdd57;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TriCode - Your Cybersecurity Partner for Tomorrow</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Securing the Future, One Byte at a Time</h2>
+        <p>Protecting your digital assets with cutting-edge solutions.</p>
+        <div class="cta">
+            <a href="#contact">Get Started</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="services">
+            <h2>About Us</h2>
+            <p>TriCode is more than a cybersecurity company; we're a close-knit group of friends, united by our passion for protecting digital assets. Founded by cybersecurity enthusiasts, we're driven by innovation and a shared vision for a secure digital future.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3>Threat Defense & Incident Response</h3>
+                <p>Real-time threat detection and effective incident response plans to keep you safe from cyber attacks.</p>
+            </div>
+            <div class="service">
+                <h3>Security Assessment & Consulting</h3>
+                <p>Expert assessments and consulting services to ensure your digital infrastructure is secure and resilient.</p>
+            </div>
+            <div class="service">
+                <h3>Digital Asset Protection</h3>
+                <p>Safeguard your valuable digital assets with our specialized protection solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TriCode. All Rights Reserved.</p>
+        <p>Follow us on social media:
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
